@@ -1,6 +1,5 @@
 .mainPanel {
   border: 1px solid pink;
-  float: right;
 
   margin-left: 17rem;
 
@@ -12,4 +11,7 @@
   text-align: center;
   justify-content: center;
   background: #c6cbd6;
+}
+.mainPanel h1 {
+  color: rgb(129, 129, 129);
 }

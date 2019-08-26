@@ -1,5 +1,5 @@
 import React from "react";
-
+import ClassRooms from "../../classroom_data.json";
 import "./SidePanel.css";
 
 export default class SidePanel extends React.Component {
@@ -12,8 +12,9 @@ export default class SidePanel extends React.Component {
       <div className="SidePanel">
         <h1>School: XYZ</h1>
         <div>
-          <h4>Class 1</h4>
-          <h4>Class 2</h4>
+          {ClassRooms.map((classRoom, index) => {
+            return <h4>{classRoom.classname}</h4>;
+          })}
         </div>
       </div>
     );
