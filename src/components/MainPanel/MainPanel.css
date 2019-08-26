@@ -1,6 +1,15 @@
 .mainPanel {
   border: 1px solid pink;
   float: right;
-  height: 100%;
+
+  margin-left: 17rem;
+
+  min-height: 100vh;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
   width: 80%;
+  text-align: center;
+  justify-content: center;
+  background: #c6cbd6;
 }
