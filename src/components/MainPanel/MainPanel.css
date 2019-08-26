@@ -1,2 +1,6 @@
-.layout {
+.mainPanel {
+  border: 1px solid pink;
+  float: right;
+  height: 100%;
+  width: 80%;
 }

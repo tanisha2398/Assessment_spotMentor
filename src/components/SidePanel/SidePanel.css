@@ -1,2 +1,46 @@
-.layout {
+.SidePanel {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #7174cf;
+  overflow-x: hidden;
+  padding-top: 20px;
+  font-weight: normal;
+}
+
+.SidePanel h1 {
+  color: #fff;
+  text-align: center;
+  padding: 6px 8px 6px 16px;
+  margin-bottom: 50px;
+  font-weight: normal;
+}
+
+.SidePanel h4 {
+  padding: 6px 8px 6px 16px;
+  font-weight: normal;
+  font-size: 15px;
+  color: #fff;
+  display: block;
+}
+
+.SidePanel h4:hover {
+  color: #000;
+}
+
+.main {
+  margin-left: 160px;
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .SidePanel {
+    padding-top: 15px;
+  }
+  .SidePanel h4 {
+    font-size: 18px;
+  }
 }

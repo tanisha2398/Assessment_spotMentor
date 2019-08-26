@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 import "./SidePanel.css";
 
@@ -9,15 +9,12 @@ export default class SidePanel extends React.Component {
 
   render() {
     return (
-      <div className="sidePanel">
-        <h1> SidePanel </h1>
-        {/*
-
-
-          Your code Here
-
-
-        */}
+      <div className="SidePanel">
+        <h1>School: XYZ</h1>
+        <div>
+          <h4>Class 1</h4>
+          <h4>Class 2</h4>
+        </div>
       </div>
     );
   }
