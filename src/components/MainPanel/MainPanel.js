@@ -11,7 +11,11 @@ export default class MainPanel extends React.Component {
     console.log(this.props);
     return (
       <div className="mainPanel">
-        <MainPanelContent {...this.props} />
+        {this.props.match.path === "/" ? (
+          <h1>Class not selected</h1>
+        ) : (
+          <MainPanelContent {...this.props} />
+        )}
       </div>
     );
   }

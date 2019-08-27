@@ -8,20 +8,20 @@ export default class Layout extends React.Component {
   // constructor(props) {
   //   super(props);
   // }
-  // state = {
-  //   classClicked: false
-  // };
-  // classIsClicked = () => {
-  //   this.setState({
-  //     classClicked: true
-  //   });
-  // };
+  state = {
+    classClicked: false
+  };
+  classIsClicked = () => {
+    this.setState({
+      classClicked: true
+    });
+  };
   render() {
     console.log(this.props);
     return (
       <div className="Layout">
-        <SidePanel />
-        <MainPanel />
+        <SidePanel classIsClicked={this.classIsClicked} />
+        <MainPanel {...this.props} />
       </div>
     );
   }
