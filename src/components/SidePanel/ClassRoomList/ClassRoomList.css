@@ -1,0 +1,11 @@
+.ClassRoomList h4 {
+  padding: 6px 8px 6px 16px;
+  font-weight: normal;
+  font-size: 15px;
+  color: #fff;
+  display: block;
+}
+
+.ClassRoomList h4:hover {
+  color: #000;
+}

@@ -1,4 +1,4 @@
-export const showClass = classrooms => ({
-  type: "SHOW_CLASS",
-  classrooms
+export const showClass = () => ({
+  type: "SHOW_CLASS"
+  
 });

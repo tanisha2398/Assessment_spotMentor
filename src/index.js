@@ -1,13 +1,24 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import AppRouter from "../src/router/AppRouter";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import configureStore from "./store/configureStore";
+import { showClass } from "./actions/classroom";
 const store = configureStore();
-console.log(store.getState());
+store.dispatch(showClass());
+const state = store.getState();
+console.log("===", state.classrooms);
 
-ReactDOM.render(<App />, document.getElementById("root"));
+const jsx = (
+  <Provider store={store}>
+    <AppRouter />
+  </Provider>
+);
+
+ReactDOM.render(jsx, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

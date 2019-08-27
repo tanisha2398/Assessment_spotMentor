@@ -1,22 +1,17 @@
 import React from "react";
-import ClassRooms from "../../classroom_data.json";
+// import ClassRooms from "../../classroom_data.json";
+import ClassRoomList from "./ClassRoomList/ClassRoomList";
+import ClassRoomListItem from "./ClassRoomList/ClassRoomListItem/ClassRoomListItem";
 import "./SidePanel.css";
 
-export default class SidePanel extends React.Component {
+const SidePanel = props => (
   // constructor(props) {
   //   super(props);
   // }
 
-  render() {
-    return (
-      <div className="SidePanel">
-        <h1>School: XYZ</h1>
-        <div>
-          {ClassRooms.map((classRoom, index) => {
-            return <h4>{classRoom.classname}</h4>;
-          })}
-        </div>
-      </div>
-    );
-  }
-}
+  <div className="SidePanel">
+    <h1>Class: XYZ</h1>
+    <ClassRoomList {...props} />
+  </div>
+);
+export default SidePanel;

@@ -1,5 +1,5 @@
 import React from "react";
-
+import MainPanelContent from "./MainPanelContent/MainPanelContent";
 import "./MainPanel.css";
 
 export default class MainPanel extends React.Component {
@@ -8,9 +8,10 @@ export default class MainPanel extends React.Component {
   // }
 
   render() {
+    console.log(this.props);
     return (
       <div className="mainPanel">
-        <h1> MainPanel </h1>
+        <MainPanelContent {...this.props} />
       </div>
     );
   }

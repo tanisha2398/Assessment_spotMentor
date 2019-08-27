@@ -3,7 +3,7 @@ const classroomReducerDefaultState = data;
 const classroomReducer = (state = classroomReducerDefaultState, action) => {
   switch (action.type) {
     case "SHOW_CLASS":
-      return [...state, action.classrooms];
+      return [...state];
     default:
       return state;
   }

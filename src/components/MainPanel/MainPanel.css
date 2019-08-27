@@ -1,12 +1,8 @@
 .mainPanel {
-  border: 1px solid pink;
-
-  margin-left: 17rem;
-
+  margin-left: 20%;
   min-height: 100vh;
   overflow-x: hidden;
-  top: 0;
-  left: 0;
+
   width: 80%;
   text-align: center;
   justify-content: center;
@@ -14,4 +10,5 @@
 }
 .mainPanel h1 {
   color: rgb(129, 129, 129);
+  margin-top: 15rem;
 }
