@@ -11,7 +11,7 @@ const SidePanel = props => (
 
   <div className="SidePanel">
     <h1>Class: XYZ</h1>
-    <ClassRoomList {...props} clicked={props.classIsClicked} />
+    <ClassRoomList {...props} />
   </div>
 );
 export default SidePanel;

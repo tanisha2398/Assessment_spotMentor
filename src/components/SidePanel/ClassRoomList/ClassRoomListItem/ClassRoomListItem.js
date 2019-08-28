@@ -1,13 +1,16 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "./ClassRoomListItem.css";
 // import MainPanelContent from "../../../MainPanel/MainPanelContent/MainPanelContent";
 const ClassRoomListItem = props => (
-  <div>
-    <h4>
-      <NavLink to={`/${props.classname}`} activeClassName="is-active">
-        {props.classname}
-      </NavLink>
-    </h4>
+  <div className="ClassRoomListItem">
+    <NavLink
+      to={`/${props.classname}`}
+      className="classname"
+      activeClassName="is-active"
+    >
+      <p className="classname">{props.classname}</p>
+    </NavLink>
   </div>
 );
 export default ClassRoomListItem;

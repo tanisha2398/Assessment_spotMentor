@@ -1,0 +1,15 @@
+.students-group {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+  padding-bottom: 7rem;
+  text-align: center;
+}
+.students {
+  width: 90%;
+  max-width: 120rem;
+  min-height: 100vh;
+  margin: 2rem auto -3rem auto;
+  text-align: center;
+}

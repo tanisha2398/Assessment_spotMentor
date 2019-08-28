@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import AverageClass from "./AverageClass/AverageClass";
 import "./ClassInfo.css";
 class ClassInfo extends Component {
   constructor(props) {
@@ -27,10 +28,11 @@ class ClassInfo extends Component {
               className={this.state.button ? "buttonTrue" : "buttonFalse"}
               onClick={this.handleClick}
             >
-              {this.state.button ? <p>Hide</p> : <p>Show</p>}
+              {this.state.button ? <p>Hide Average</p> : <p>Show Average</p>}
             </button>
           </div>
         </div>
+        {this.state.button ? <AverageClass /> : null}
       </div>
     );
   }

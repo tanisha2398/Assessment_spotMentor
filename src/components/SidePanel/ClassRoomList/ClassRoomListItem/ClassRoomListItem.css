@@ -1,3 +1,13 @@
-is-active {
+.is-active {
   font-weight: bold;
+  color: #000;
+}
+.ClassRoomListItem {
+  padding-bottom: 33px;
+  padding-left: 12px;
+  color: #fff;
+}
+.classname {
+  color: #fff;
+  text-decoration: none;
 }

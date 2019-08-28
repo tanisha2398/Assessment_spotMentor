@@ -1,0 +1,63 @@
+@keyframes fadein {
+  0% {
+    transform: scale(0.5, 0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+.StudentInfo {
+  margin: 1rem 0 2rem 0;
+  width: 7px;
+  border-radius: 0.5rem;
+  background: white;
+  box-shadow: 0 0 1rem #00000050;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+  animation: fadein 1s;
+}
+.name {
+  font-weight: bold;
+  color: #7174cf;
+}
+.right {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.subject {
+  color: black;
+  font-weight: bolder;
+  font-size: 13px;
+}
+.percent {
+  color: #61e6e6;
+  font-weight: bolder;
+  font-size: 17px;
+}
+.subjectpercent {
+  color: #61e6e6;
+  font-weight: bolder;
+  font-size: 12px;
+}
+@media (min-width: 40rem) {
+  .StudentInfo {
+    width: 70%;
+  }
+
+  .StudentInfo:hover {
+    transform: scale(1.05, 1.05);
+    box-shadow: 0 0 3rem #00000050;
+  }
+}
+
+@media (min-width: 75rem) {
+  .StudentInfo {
+    width: 30%;
+  }
+}
