@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { showClass } from "../../../actions/classroom";
 import ClassInfo from "./ClassInfo/ClassInfo";
 import StudentInfo from "./StudentInfo/StudentInfo";
-import getAverage from "../../../selectors/classroom";
+
 import { Line } from "rc-progress";
 import "./MainPanelContent.css";
 const MainPanelContent = (props,{classroom}) => {
