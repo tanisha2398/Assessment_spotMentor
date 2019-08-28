@@ -1,69 +1,19 @@
 ## Assignment Scaffolding
 
-***Code Navigation***
-
-This project consists of a main folder `src` which contains all the project files. `images` folder inside `src` contains the view of the page that is expected.
-
-There are three components `Layout`, `SidePanel` and `MainPanel` where you have to write all the logic.
-
-***Your Assignment***
-
-You have to achieve three major tasks:
-
-    use data from `classroom_data.json` to render the respective details as shown in screens.
-    Split the logic in respective Components.
-    Split the CSS in respective Components to keep them modular.
-
-Go through the structure of the project and figure out how you would proceed.
-
+##Result
 ***User Flow***
 
 1. User Lands on the first view where no classRoom is selected
-![landing](./src/images/Landing.png)
+![front](https://user-images.githubusercontent.com/28656259/63886555-5f552a00-c9f8-11e9-928e-d49f8c68696f.PNG)
+
 
 2. Clicking on a Class User can see the full view of that class
-![OneClassSelected](./src/images/OneClassSelected.png)
+
+![classInfo](https://user-images.githubusercontent.com/28656259/63886587-798f0800-c9f8-11e9-8a60-df3b4983ce41.PNG)
+
 
 3. Clicking on a 'Show Average' can see the Average of marks of all students in that class
-![ShowingClassroomAverage](./src/images/ShowingClassroomAverage.png)
-
-## Data
-
-```json
-  [
-    {
-      "classname": "Class I",
-      "students": [
-        {
-          "name": "student 1",
-          "marks": {
-            "Maths": 35,
-            "Science": 64,
-            "English": 42
-          }
-        },
-        {
-          "name": "student 2",
-          "marks": {
-            "Maths": 20,
-            "Science": 100,
-            "English": 62
-          }
-        },
-        {
-          "name": "student 3",
-          "marks": {
-            "Maths": 60,
-            "Science": 90,
-            "English": 62
-          }
-        }
-      ]
-    }
-    ...
-  ]
-```
-
+![classAverage](https://user-images.githubusercontent.com/28656259/63886602-7e53bc00-c9f8-11e9-9c38-1de2e2d0ae30.PNG)
 
 ## Available Scripts
 
